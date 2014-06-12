@@ -1,0 +1,121 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FCµØÍ¼±à¼­Æ÷ - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/FCµØÍ¼±à¼­Æ÷.res" /d "_DEBUG" /d "_AFXDLL" "D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\FCµØÍ¼±à¼­Æ÷.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP51.tmp" with contents
+[
+/nologo /MDd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/FCµØÍ¼±à¼­Æ÷.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\ChrViewerDlg.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\ClipboardData.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\DefaultValueDlg.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\DiyChr.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\FCµØÍ¼±à¼­Æ÷.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\FCµØÍ¼±à¼­Æ÷Doc.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\FCµØÍ¼±à¼­Æ÷View.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\InputTextDlg.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\MainFrm.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\Map.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\MapAttributeDlg.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\NESViewChr.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\PanelDlg.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\PanelView.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\SaveNameDlg.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\SaveStyleDlg.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\Tile.cpp"
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\ViewColDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP51.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP52.tmp" with contents
+[
+/nologo /MDd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/FCµØÍ¼±à¼­Æ÷.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\MyDoc\Do\VCpp\FCµØÍ¼±à¼­Æ÷\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP52.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP53.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/FCµØÍ¼±à¼­Æ÷.pdb" /debug /machine:I386 /out:"Debug/FCµØÍ¼±à¼­Æ÷.exe" /pdbtype:sept 
+".\Debug\ChrViewerDlg.obj"
+".\Debug\ClipboardData.obj"
+".\Debug\DefaultValueDlg.obj"
+".\Debug\DiyChr.obj"
+".\Debug\FCµØÍ¼±à¼­Æ÷.obj"
+".\Debug\FCµØÍ¼±à¼­Æ÷Doc.obj"
+".\Debug\FCµØÍ¼±à¼­Æ÷View.obj"
+".\Debug\InputTextDlg.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Map.obj"
+".\Debug\MapAttributeDlg.obj"
+".\Debug\NESViewChr.obj"
+".\Debug\PanelDlg.obj"
+".\Debug\PanelView.obj"
+".\Debug\SaveNameDlg.obj"
+".\Debug\SaveStyleDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Tile.obj"
+".\Debug\ViewColDlg.obj"
+".\Debug\FCµØÍ¼±à¼­Æ÷.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP53.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChrViewerDlg.cpp
+ClipboardData.cpp
+DefaultValueDlg.cpp
+DiyChr.cpp
+FCµØÍ¼±à¼­Æ÷.cpp
+FCµØÍ¼±à¼­Æ÷Doc.cpp
+FCµØÍ¼±à¼­Æ÷View.cpp
+InputTextDlg.cpp
+MainFrm.cpp
+Map.cpp
+MapAttributeDlg.cpp
+NESViewChr.cpp
+PanelDlg.cpp
+PanelView.cpp
+SaveNameDlg.cpp
+SaveStyleDlg.cpp
+Tile.cpp
+ViewColDlg.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP55.tmp" with contents
+[
+/nologo /o"Debug/FCµØÍ¼±à¼­Æ÷.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\ChrViewerDlg.sbr"
+".\Debug\ClipboardData.sbr"
+".\Debug\DefaultValueDlg.sbr"
+".\Debug\DiyChr.sbr"
+".\Debug\FCµØÍ¼±à¼­Æ÷.sbr"
+".\Debug\FCµØÍ¼±à¼­Æ÷Doc.sbr"
+".\Debug\FCµØÍ¼±à¼­Æ÷View.sbr"
+".\Debug\InputTextDlg.sbr"
+".\Debug\MainFrm.sbr"
+".\Debug\Map.sbr"
+".\Debug\MapAttributeDlg.sbr"
+".\Debug\NESViewChr.sbr"
+".\Debug\PanelDlg.sbr"
+".\Debug\PanelView.sbr"
+".\Debug\SaveNameDlg.sbr"
+".\Debug\SaveStyleDlg.sbr"
+".\Debug\Tile.sbr"
+".\Debug\ViewColDlg.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP55.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+FCµØÍ¼±à¼­Æ÷.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

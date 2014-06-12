@@ -1,0 +1,1232 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FC地图编辑器.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\FC地图编辑器.ico"
+IDR_FCTYPE              ICON    DISCARDABLE     "res\\FC地图编辑器Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP_CELLH        BITMAP  DISCARDABLE     "res\\bitmap_g.bmp"
+IDB_BITMAP_CELLV        BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_BITMAP_ALLV         BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BITMAP_ALLH         BITMAP  DISCARDABLE     "res\\bitmap_a.bmp"
+IDB_BITMAP_TILE         BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_BITMAP_CHR          BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDB_BITMAP_CHR_DIY      BITMAP  DISCARDABLE     "res\\bitmap_c.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_TEXT
+    BUTTON      ID_EDIT_DELETE
+    BUTTON      ID_EDIT_FILL
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_VIEW_GRID
+    BUTTON      ID_EDIT_LOCK
+    BUTTON      ID_VIEW_REFRESH
+    BUTTON      ID_VIEW_RELOAD
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "全选(&A)\tCtrl+A",            ID_EDIT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "填充(&F)\tCtrl+F",            ID_EDIT_FILL
+        MENUITEM "删除(&D)\tCtrl+D",            ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "文字(&S)...\tCtrl+T",         ID_EDIT_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "透明(&M)",                    ID_EDIT_TM
+        MENUITEM "锁定(&L)\tCtrl+L",            ID_EDIT_LOCK
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "显示网格(&G)",                ID_VIEW_GRID
+        MENUITEM SEPARATOR
+        MENUITEM "刷新(&R)\tF5",                ID_VIEW_REFRESH
+        MENUITEM "重载(&L)\tF10",               ID_VIEW_RELOAD
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        MENUITEM "默认值(&D)...",               ID_SET_DEFAULTVALUE
+        MENUITEM "地图属性(&A)..",              ID_SET_MAPATTRIBUTE
+        MENUITEM "保存方式(&S)...",             ID_SET_SAVESTYLE
+        MENUITEM SEPARATOR
+        MENUITEM "监听文件(&L)",                ID_SET_LISTEN
+    END
+    POPUP "导入(&I)"
+    BEGIN
+        MENUITEM "字模(&C)...",                 ID_IMPORT_CHR
+        MENUITEM "调色板(&P)...",               ID_IMPORT_COL
+        MENUITEM "名字表(&N)...",               ID_IMPORT_MAP
+        MENUITEM "属性表(&A)...",               ID_IMPORT_ATTRIBUTE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 FC地图编辑器(&A)...",    ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_EDIT_ALL,            VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EDIT_DELETE,         VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FILL,           VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_EDIT_LOCK,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_EDIT_TEXT,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         ID_VIEW_RELOAD,         VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_REFRESH,        VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 FC地图编辑器"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FC地图编辑器 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "QQ:472497084 E-Mail:trbbadboy@qq.com",IDC_STATIC,40,34,
+                    180,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "版权所有 L&&T (C) 2009-2011",IDC_STATIC,40,22,119,8
+END
+
+IDD_DIALOG_DEFAULTVALUE DIALOG DISCARDABLE  0, 0, 134, 28
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置默认值"
+FONT 12, "System"
+BEGIN
+    COMBOBOX        IDC_COMBO_DVALUE,46,9,41,97,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,91,7,36,14
+    LTEXT           "默认值:",IDC_STATIC,7,11,37,8
+END
+
+IDD_DIALOG_MAPATTRIBUTE DIALOG DISCARDABLE  0, 0, 128, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置地图属性"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_CELLWIDTH,27,19,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_CELLHEIGHT,27,39,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_WIDTH,89,19,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_HEIGHT,89,39,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "确定",IDOK,7,66,50,14
+    PUSHBUTTON      "取消",IDCANCEL,70,66,50,14
+    LTEXT           "高:",IDC_STATIC,74,41,11,8
+    LTEXT           "宽:",IDC_STATIC,74,19,11,8
+    GROUPBOX        "整体大小",IDC_STATIC,69,7,52,49
+    LTEXT           "高:",IDC_STATIC,13,41,11,8
+    LTEXT           "宽:",IDC_STATIC,13,21,11,8
+    GROUPBOX        "单元大小",IDC_STATIC,7,7,52,49
+END
+
+IDD_DIALOG_INPUTTEXT DIALOG DISCARDABLE  0, 0, 181, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入文字"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_TEXT,39,27,135,34,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_EDIT_OFFSET,39,7,40,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,71,65,50,14
+    PUSHBUTTON      "取消",IDCANCEL,124,65,50,14
+    LTEXT           "偏移量:",IDC_STATIC,7,11,27,8
+    LTEXT           "文字:",IDC_STATIC,14,26,19,8
+END
+
+IDD_DIALOG_SAVESTYLE DIALOG DISCARDABLE  0, 0, 176, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置保存方式"
+FONT 10, "System"
+BEGIN
+    CONTROL         "(&C)单元格",IDC_RADIO_CELL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,16,17,49,10
+    CONTROL         "(&A)整体",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON,66,
+                    17,40,10
+    CONTROL         "(&X)横向",IDC_RADIO_V,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,16,48,41,10
+    CONTROL         "(&Y纵向",IDC_RADIO_H,"Button",BS_AUTORADIOBUTTON,66,48,
+                    39,10
+    DEFPUSHBUTTON   "确定",IDOK,60,75,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,119,75,50,14
+    GROUPBOX        "方式",IDC_STATIC,7,7,105,26
+    GROUPBOX        "方向",IDC_STATIC,7,37,105,26
+    CONTROL         141,IDC_STATIC_PIC,"Static",SS_BITMAP,119,12,50,50
+END
+
+IDD_DIALOG_SAVENAME DIALOG DISCARDABLE  0, 0, 151, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置保存文件名"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,79,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,79,50,14
+    LTEXT           "字模:",IDC_STATIC,17,10,36,8
+    EDITTEXT        IDC_EDIT_CHR,62,7,82,12,ES_AUTOHSCROLL
+    LTEXT           "调色板:",IDC_STATIC,17,28,36,8
+    EDITTEXT        IDC_EDIT_COL,62,25,82,12,ES_AUTOHSCROLL
+    LTEXT           "名字表:",IDC_STATIC,17,46,36,8
+    EDITTEXT        IDC_EDIT_NAM,62,43,82,12,ES_AUTOHSCROLL
+    LTEXT           "属性表:",IDC_STATIC,17,64,36,8
+    EDITTEXT        IDC_EDIT_ATB,62,61,82,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_VIERCHR DIALOG DISCARDABLE  0, 0, 196, 142
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CHR选择"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,139,100,50,14
+    PUSHBUTTON      "取消",IDCANCEL,139,121,50,14
+    COMBOBOX        IDC_COMBO_CHRSEL,139,18,50,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         145,IDC_STATIC_BMP,"Static",SS_BITMAP,7,7,128,128
+    LTEXT           "选择BANK",IDC_STATIC,140,7,36,8
+END
+
+IDD_DIALOG_PANEL DIALOG DISCARDABLE  0, 0, 242, 251
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "单个读取",IDC_RADIO_SIN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,152,20,51,10
+    CONTROL         "连读方块",IDC_RADIO_REC,"Button",BS_AUTORADIOBUTTON,152,
+                    34,48,10
+    CONTROL         "连读4,竖向放置",IDC_RADIO_REC_V,"Button",
+                    BS_AUTORADIOBUTTON,152,48,70,10
+    CONTROL         "连读4,横向放置",IDC_RADIO_REC_H,"Button",
+                    BS_AUTORADIOBUTTON,152,62,70,10
+    CONTROL         "Tile不选,描色",IDC_RADIO_COLOR,"Button",
+                    BS_AUTORADIOBUTTON,152,76,62,10
+    CONTROL         "自定义方块",IDC_RADIO_SEL,"Button",BS_AUTORADIOBUTTON,
+                    152,90,56,10
+    COMBOBOX        IDC_COMBO_DIY,81,153,50,86,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_GROUP
+    PUSHBUTTON      "新建",IDC_BUTTON_DIY_NEW,155,168,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "删除",IDC_BUTTON_DIY_DEL,155,153,50,14,NOT WS_VISIBLE
+    GROUPBOX        "自定义方式",IDC_STATIC_SEL_FRAME,8,141,128,101
+    CONTROL         145,IDC_STATIC_BMP,"Static",SS_BITMAP,8,8,128,128
+    GROUPBOX        "选取方式",IDC_STATIC_GROUP_FRAME,146,8,88,97
+    CONTROL         147,IDC_STATIC_DIY_BMP,"Static",SS_BITMAP,13,152,64,64
+    GROUPBOX        "调色板",IDC_STATIC_FRAM_COL,146,108,88,134
+    CONTROL         150,IDC_STATIC_BMPCOL,"Static",SS_BITMAP,151,120,11,11
+    CONTROL         "",IDC_STATIC_STDCOL_BMP,"Static",SS_BITMAP,146,177,11,
+                    11
+    CONTROL         "锁定调色板",IDC_CHECK_CLOCKPAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,204,56,10
+    CONTROL         "锁定自定义",IDC_CHECK_LOCKDIY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,205,56,10
+    PUSHBUTTON      "填充",IDC_BUTTON_FILL,81,189,50,14
+    EDITTEXT        IDC_EDIT_DIY_W,100,169,14,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DIY_H,116,169,14,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "大小",IDC_STATIC,82,172,17,8
+    LTEXT           "Information",IDC_STATIC_INF,13,225,117,8,SS_SUNKEN | 
+                    NOT WS_GROUP
+END
+
+IDD_DIALOG_COLOR DIALOG DISCARDABLE  0, 0, 203, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "颜色选择"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,146,28,50,14
+    PUSHBUTTON      "取消",IDCANCEL,146,48,50,14
+    CONTROL         "",IDC_STATIC_COL,"Static",SS_BITMAP,7,7,11,11
+    COMBOBOX        IDC_COMBO_INDEX,146,7,50,85,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "L&T\0"
+            VALUE "FileDescription", "FCMapEditor for you!\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FC地图编辑器\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FC地图编辑器.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "FC地图编辑器\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_DEFAULTVALUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+
+    IDD_DIALOG_MAPATTRIBUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 121
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_INPUTTEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_DIALOG_SAVESTYLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG_SAVENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_DIALOG_VIERCHR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_DIALOG_PANEL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_DEFAULTVALUE DLGINIT
+BEGIN
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3030, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4130, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4230, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4330, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4430, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4530, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4630, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4131, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4231, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4331, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4431, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4531, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4631, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3032, 0x2028, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3132, 0x2128, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3232, 0x2228, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3332, 0x2328, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3432, 0x2428, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3532, 0x2528, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3632, 0x2628, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3732, 0x2728, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3832, 0x2828, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3932, 0x2928, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4132, 0x2a28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4232, 0x2b28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4332, 0x2c28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4432, 0x2d28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4532, 0x2e28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4632, 0x2f28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3033, 0x3028, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3133, 0x3128, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3233, 0x3228, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3333, 0x3328, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3433, 0x3428, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3533, 0x3528, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3633, 0x3628, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3733, 0x3728, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3833, 0x3828, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3933, 0x3928, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4133, 0x3a28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4233, 0x3b28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4333, 0x3c28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4433, 0x3d28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4533, 0x3e28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4633, 0x3f28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3034, 0x4028, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3134, 0x4128, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3234, 0x4228, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3334, 0x4328, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3434, 0x4428, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3534, 0x4528, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3634, 0x4628, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3734, 0x4728, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3834, 0x4828, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3934, 0x4928, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4134, 0x4a28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4234, 0x4b28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4334, 0x4c28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4434, 0x4d28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4534, 0x4e28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4634, 0x4f28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3035, 0x5028, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3135, 0x5128, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3235, 0x5228, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3335, 0x5328, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3435, 0x5428, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3535, 0x5528, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3635, 0x5628, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3735, 0x5728, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3835, 0x5828, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3935, 0x5928, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4135, 0x5a28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4235, 0x5b28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4335, 0x5c28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4435, 0x5d28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4535, 0x5e28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4635, 0x5f28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3036, 0x6028, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3136, 0x6128, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3236, 0x6228, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3336, 0x6328, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3436, 0x6428, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3536, 0x6528, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3636, 0x6628, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3736, 0x6728, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3836, 0x6828, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3936, 0x6928, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4136, 0x6a28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4236, 0x6b28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4336, 0x6c28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4436, 0x6d28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4536, 0x6e28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4636, 0x6f28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3037, 0x7028, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3137, 0x7128, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3237, 0x7228, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3337, 0x7328, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3437, 0x7428, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3537, 0x7528, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3637, 0x7628, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3737, 0x7728, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3837, 0x7828, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x3937, 0x7928, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4137, 0x7a28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4237, 0x7b28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4337, 0x7c28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4437, 0x7d28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4537, 0x7e28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 6, 0
+0x4637, 0x7f28, 0x0029, 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4138, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4238, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4338, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4438, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4538, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4638, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4139, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4239, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4339, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4439, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4539, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4639, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3041, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3141, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3241, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3341, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3441, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3541, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3641, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3741, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3841, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3941, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4141, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4241, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4341, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4441, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4541, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4641, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3042, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3142, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3242, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3342, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3442, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3542, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3642, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3742, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3842, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3942, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4142, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4242, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4342, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4442, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4542, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4642, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3043, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3143, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3243, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3343, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3443, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3543, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3643, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3743, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3843, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3943, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4143, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4243, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4343, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4443, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4543, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4643, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3044, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3144, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3244, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3344, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3444, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3544, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3644, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3744, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3844, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3944, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4144, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4244, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4344, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4444, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4544, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4644, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3045, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3145, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3245, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3345, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3445, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3545, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3645, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3745, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3845, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3945, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4145, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4245, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4345, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4445, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4545, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4645, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3046, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3146, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3246, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3346, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3446, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3546, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3646, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3746, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3846, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x3946, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4146, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4246, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4346, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4446, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4546, "\000" 
+    IDC_COMBO_DVALUE, 0x403, 3, 0
+0x4646, "\000" 
+    0
+END
+
+IDD_DIALOG_PANEL DLGINIT
+BEGIN
+    IDC_COMBO_DIY, 0x403, 7, 0
+0xe0b1, 0xc5ba, 0x303a, "\000" 
+    IDC_COMBO_DIY, 0x403, 7, 0
+0xe0b1, 0xc5ba, 0x313a, "\000" 
+    IDC_COMBO_DIY, 0x403, 7, 0
+0xe0b1, 0xc5ba, 0x323a, "\000" 
+    IDC_COMBO_DIY, 0x403, 7, 0
+0xe0b1, 0xc5ba, 0x333a, "\000" 
+    IDC_COMBO_DIY, 0x403, 7, 0
+0xe0b1, 0xc5ba, 0x343a, "\000" 
+    IDC_COMBO_DIY, 0x403, 7, 0
+0xe0b1, 0xc5ba, 0x353a, "\000" 
+    IDC_COMBO_DIY, 0x403, 7, 0
+0xe0b1, 0xc5ba, 0x363a, "\000" 
+    IDC_COMBO_DIY, 0x403, 7, 0
+0xe0b1, 0xc5ba, 0x373a, "\000" 
+    IDC_COMBO_DIY, 0x403, 7, 0
+0xe0b1, 0xc5ba, 0x383a, "\000" 
+    IDC_COMBO_DIY, 0x403, 7, 0
+0xe0b1, 0xc5ba, 0x393a, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "FC地图编辑器\n\nFC\nNES地图文件(*.nmp)\n.nmp\nFC.Document\nFC Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "FC地图编辑器"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_INDICATOR_CELL       "单元:(00,00) 坐标(00,00)"
+    ID_INDICATOR_SEL        "选区(0000,0000) to (0000,0000)"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+    ID_INDICATOR_ABS        "绝对坐标(0000,0000) Tile:00"
+    ID_INDICATOR_SIZE       "大小(0000x0000)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_DELETE          "删除地图数据\n删除"
+    ID_VIEW_GRID            "显示或隐藏网格\n网格"
+    ID_SET_DEFAULTVALUE     "设置地图的默认值，删除或者剪切的时候将用默认值填充\n默认值"
+    ID_SET_MAPATTRIBUTE     "设置地图的基本属性"
+    ID_SET_SAVESTYLE        "设置保存地图数据时，地图数据的排列方式"
+    ID_IMPORT_CHR           "从字模文件中导入字模"
+    ID_IMPORT_MAP           "从地图文件中导入地图数据"
+    ID_IMPORT_COL           "从调试文件中导入调色"
+    ID_EDIT_TEXT            "直接输入文字\n文字"
+    ID_EDIT_ALL             "选中所有\n全选"
+    ID_IMPORT_ATTRIBUTE     "导入属性表\n属性表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_FILL            "填充选定的区域\n填充"
+    ID_EDIT_TM              "设置为透明模式"
+    ID_VIEW_REFRESH         "刷新显示区域\n刷新"
+    ID_EDIT_LOCK            "锁定地图数据，防止误操作\n锁定"
+    ID_VIEW_RELOAD          "从文件重新载入数据\n重载"
+    ID_SET_LISTEN           "监听文件，以便在数据被外部程序改变时自动载入\n监听文件"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FC地图编辑器.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

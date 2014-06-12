@@ -1,0 +1,27 @@
+// DiyChr.cpp: implementation of the CDiyChr class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "FCµØÍ¼±à¼­Æ÷.h"
+#include "DiyChr.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CDiyChr::CDiyChr()
+{
+
+}
+
+CDiyChr::~CDiyChr()
+{
+
+}
